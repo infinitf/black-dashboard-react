@@ -2,7 +2,7 @@
   "name": "black-dashboard-react",
   "version": "1.2.2",
   "private": true,
-  "homepage": "https://demos.creative-tim.com/black-dashboard-react/#/admin/dashboard",
+  "homepage": "https://ads.pm/black-dashboard-react/#/admin/dashboard",
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.4.0",
     "bootstrap": "4.6.2",
@@ -25,7 +25,9 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-scss": "sass src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css",
-    "minify-scss": "sass src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.min.css --style compressed"
+    "minify-scss": "sass src/assets/scss/black-dashboard-react.scss 
+src/assets/css/black-dashboard-react.min.css --style compressed",
+"deploy" : "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
